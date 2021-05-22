@@ -22,7 +22,7 @@
 	<!-- FontAwesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
 
-	<title>Social Media Project: DAWGr</title>
+	<title>Tourism Project: Olympia Top 10</title>
 </head> 
 
 <body>
@@ -71,8 +71,8 @@
         
         <div class="header-intro theme-bg-primary text-white py-5">
 	        <div class="container position-relative">		        
-		        <h2 class="page-heading mb-2">Social Media Project: Dawgr</h2>
-		        <div class="page-heading-tagline">A React Native Application</div>
+		        <h2 class="page-heading mb-2">Tourism Project: Olympia Top 10</h2>
+		        <div class="page-heading-tagline">A React Application</div>
 				
 	        </div><!--//container-->
         </div><!--//header-intro-->
@@ -84,18 +84,19 @@
 		        <div class="mb-5"><img class="img-fluid" src="assets/images/projects/project-figure-main.jpg" alt=""></div>
 		        <h3 class="section-title">Project Background</h3>
 		        
-				<p>Since the early 2000's, social media usage has been growing exponentially and its growth is still unihibited almost
-					20 years on. While many social media sites serve as sources for news and information, they are capable of much more.
-					Indeed, the world has discovered their ability to allow people to interact amongst themselves in addition to the
-					provider-customer commercial relationship. The barrier to the simple exchange of ideas, photos and almost any
-					content has been removed as structured websites and blogs take a diminished role. As the use of social media
-					platforms expand, they tend to develop more unique audiences.<br><br>
-					DAWGr is an example of a platform directed toward dog owners and people who share a love of pets.
-				</p>
+                <p> For over three decades, the tourism industry has been relying on the Internet as a way to reduce their traditional marketing strategies of
+                    mass advertising. While large web portals like Hotels.com, Expedia and Travelocity have had success in a global
+                    marketplace, smaller cities may still find a need to directly market to a targeted audience. Indeed, who would know
+                    better about the ins and outs of a particular area than the locals? <br><br>
+                    The Olympia Top 10 is an example of a platform directed toward people visiting or recently moving to Olympia
+                    Washington. The site also serves as a resource for locals who want to keep tabs on what's new, and particularly what
+                    people judge to be the best.<br><br>
+					Note: the live site below may need to be reloaded into the cloud due to inactivity. If so, please allow several minutes while it reloads.
+                </p>
 		        
 		        <div class="mb-5">
-                   <!-- <a class="btn btn-primary m-2" href="http://18.224.39.127/" target="_blank"><i class="fas fa-external-link-alt me-2"></i> View Live Site</a> -->
-                    <a class="btn btn-primary m-2" href="https://github.com/patrickdlippert/dogsite" target="_blank"><i class="fab fa-github-alt fa-fw"></i> Code Repository</a>
+                    <a class="btn btn-primary m-2" href="https://olympiatop10.herokuapp.com/" target="_blank"><i class="fas fa-external-link-alt me-2"></i> View Live Site</a>
+                    <a class="btn btn-primary m-2" href="https://github.com/patrickdlippert/olympiasite" target="_blank"><i class="fab fa-github-alt fa-fw"></i> Code Repository</a>
                 </div>
 		        
 		        
@@ -105,24 +106,20 @@
 						<li data-bs-target="#project-carousel" data-bs-slide-to="1"></li>
 						<li data-bs-target="#project-carousel" data-bs-slide-to="2"></li>
                         <li data-bs-target="#project-carousel" data-bs-slide-to="3"></li>
-						<li data-bs-target="#project-carousel" data-bs-slide-to="4"></li>
 					</ol>
 					
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-						    <img class="d-block w-100" src="assets/images/projects/project2-slide-1.png" alt="First slide">
+						    <img class="d-block w-100" src="assets/images/projects/project3-slide-1.png" alt="First slide">
 						</div>
 						<div class="carousel-item">
-						    <img class="d-block w-100" src="assets/images/projects/project2-slide-2.png" alt="Second slide">
+						    <img class="d-block w-100" src="assets/images/projects/project3-slide-2.png" alt="Second slide">
 						</div>
 						<div class="carousel-item">
-						    <img class="d-block w-100" src="assets/images/projects/project2-slide-3.png" alt="Third slide">
+						    <img class="d-block w-100" src="assets/images/projects/project3-slide-3.png" alt="Third slide">
 						</div>
                         <div class="carousel-item">
-						    <img class="d-block w-100" src="assets/images/projects/project2-slide-4.png" alt="Fourth slide">
-						</div>
-						<div class="carousel-item">
-						    <img class="d-block w-100" src="assets/images/projects/project2-slide-5.png" alt="Fifth slide">
+						    <img class="d-block w-100" src="assets/images/projects/project3-slide-4.png" alt="Fourth slide">
 						</div>
 					</div>
 					
@@ -144,54 +141,42 @@
 	        
 	        <div class="section-row">
 		        <h3 class="section-title">Requirements</h3>
-		        <p>The DAWGr project presents a mobile user interface for the following areas: </p>
+		        <p>The Olympia Top 10 project presents a responsive user interface for the following areas:  </p>
 		        
 		        <ul class="mb-5 ms-md-5">
-				  <li class="mb-3"><strong>Main view:</strong> Landing page that displays three sections of dog categories: top rated, newest posts and bottom rated dogs.</li>
-                  <li class="mb-3"><strong>Full List view:</strong> When a user clicks the "See more" link at the bottom of each category, the view will update to this page of up to 100 image thumbnails.</li>
-				  <li class="mb-3"><strong>Detail view:</strong> When a user clicks on a thumbnail from any view, the screen will update to this larger image display with icons to review or save the dog as a favorite.</li>
+				  <li class="mb-3"><strong>Main view:</strong> Landing page that presents site navigation, branding, promotional area and a carousel of resources.</li>
+                  <li class="mb-3"><strong>Guide view:</strong> When a user clicks the navigation to Attractions, Restaurants or Events, the Guide component is called to render the top ten items in each category.</li>
+				  <li class="mb-3"><strong>Detail view:</strong> When a user clicks on a "more" button (when presented) the screen will update to this "masonry" gallery view.</li>
 				  <li class="mb-3"><strong>Profile view:</strong> A form-driven page for a user to upload pictures of their dog along with captions and other information.</li>
-				  <li class="mb-3"><strong>Contest view:</strong> Shows the winner from the last competition plus thumbnails of the latest contest entries.</li>
-                  <li class="mb-3"><strong>Favorites:</strong> A display of the user's selected favorites (from clicking heart icon in image view).</li>
-                  <li class="mb-3"><strong>Settings:</strong> User and application settings.</li>
+				  <li class="mb-3"><strong>Contest entry:</strong> A modal that appears when "enter sweepstakes" is selected from the Main view.</li>
 				</ul>
 				
-                <p>The design of the application was rooted in the use of Expo to achieve a solution for both iOS and Android using React Native. Several React Native component libraries accelerated the implmentation:</p>
+                <p>The core design was that all of the page views should be unified by matching header and footer branding and
+                    navigation. This was the starting point for converting the design from wireframe into code. The wireframes provided
+                    basic layout of graphics, text and form details, but I spent some time choosing:</p>
                 <p>
-                    <strong>Section Grid:</strong> The react-native-super-grid library was used in the Main view:
-                    <ul class="mb-2 ms-md-3">
-                        <li class="mb-1">Defined three sections for each data type.</li>
-                        <li class="mb-1">Coded my own rendering callback functions to display thumbnails within the grid sections.</li>
-                        <li class="mb-1">Created header and footer callback functions in each grid. The footer contains the navigation to the Full view.</li>
-                    </ul>
-                </p>
-                <p>
-                    <strong>Carousels:</strong> To implement a carousel display for sponsored advertisements, I utilized react-native-slick. The Slick component allowed me to rotate Cards for each sponsor object.
+                    <strong>Footer:</strong> The footer shows the expected simple navigation links for when the page is fully scrolled, but it also includes a Washington State graphic that provides a point of reference for the city of Olympia's location relative to Seattle.
                 </p>
 				<p>
-					<strong>Image Picker:</strong> I explored several different image selection librarires before settling on
-					ImagePicker from "expo-image-picker". This library provides support for both iOS and Android with near-identical
-					functionality to select and apply aspect ratio cropping to an image. In addition to ImagePicker, the following
-					related libraries were needed:
-					<ul class="mb-2 ms-md-3">
-						<li class="mb-1">Permissions from 'expo-permissions': Prompts the user for access to media library and camera.</li>
-						<li class="mb-1">ImageManipulator from 'expo-image-manipulator': Enables sizing and file format upon save.</li>
-						<li class="mb-1"> MediaLibrary from 'expo-media-library': Enables writing to the media library on the device.</li>
-					</ul>
-				</p>
+                    <strong>Guide:</strong> I utilized the mdbreact library (Material Design Boostrap) to use a zoom-in effect on each item in the top ten list while also alternating images & text down the page for visual interest. If addition images are included in the provided data objects, a button and route link will be generated for a "masonry" gallery view.
+                </p>
+                <p>
+                    <strong>Carousels:</strong> To implement a carousel display the full pages, I utilized the Slider component from react-slick. Slider allowed me to construct my own CardCarousel component where I rotate cards with images for the resource links on the Main view. I reused the CardCarousel component for local sponsors/advertisers at the bottom of the three category views.
+                </p>
+
 
 
 	        </div><!--//section-row-->
 	        <div class="section-row">
 				<h3 class="section-title">Actions &amp; Outcomes</h3>
-	            <p>While the mentioned React Native libraries greatly aided the development of DAWGr, a great deal of care was needed to achieve the navigation scheme that I intended. The use of top tab navigators that separate image viewing functionality from image uploading was fairly straightforward with stack navigation working underneath. However, I also wanted a control bar above the tabbed navigation to offer global functions (favorites, contests and settings at the current time plus room for any future features). The key was to implement an additional stacked navigator of type "modal" and allow the icon-directed screens to also be the modal type.<br><br>
+	            <p>React enabled great opportunities to create reusable components for this project. In particular, the code for the three top ten lists became one... only with different data being passed to the component. <br><br>
 
-                I used Redux to manage the application state for all data and images, with the exception of logo-level images. This allows for centralized real-time updating of displayed information: image collections, ratings, comments, advertising, etc. The NodeJS/Express/MongoDB backend server enabled a clean separation of the front-end logic from the programmatic data.
+                React also enabled a clean separation of the front-end logic from the programmatic data. Virtually all data is stored in the Redux Store for the application. The foundational work in the React web application paved the way for a much easier path for a React Native version which is also detailed in the projects page.
                 </p>
 	            <ul class="list-unstyled ps-4 mb-5 ms-md-5">
-				  <li class="mb-4"><i class="fas fa-check text-primary me-3"></i>React Native (and Expo) allowed for a single JS-driven code base for multiple native devices.</li>
+				  <li class="mb-4"><i class="fas fa-check text-primary me-3"></i>React transformed a multi-page concept into a single page app.</li>
 				  <li class="mb-4"><i class="fas fa-check text-primary me-3"></i>Reusable components streamlined the code and reduced total lines.</li>
-				  <li class="mb-4"><i class="fas fa-check text-primary me-3"></i>Redux management of state provided a centralized interface to the backend.</li>
+				  <li class="mb-4"><i class="fas fa-check text-primary me-3"></i>Redux management of state provided a centralized interface to the data.</li>
 				</ul>
 				
 				
@@ -227,22 +212,14 @@
 			        <div class="webdev-icon col-3 col-md-2 me-0 mb-4 px-4"><img class="img-fluid svg-ie-fix" src="assets/images/webdev-icons/react.svg"></div>
 			        <div class="webdev-icon col-3 col-md-2 me-0 mb-4 px-4"><img class="img-fluid svg-ie-fix" src="assets/images/webdev-icons/nodejs.svg"></div>
 			        <div class="webdev-icon col-3 col-md-2 me-0 mb-4 px-4"><img class="img-fluid svg-ie-fix" src="assets/images/webdev-icons/javascript.svg"></div>	        
-			        <div class="webdev-icon col-3 col-md-2 me-0 mb-4 px-4"><img class="img-fluid svg-ie-fix" src="assets/images/webdev-icons/mongodb-alt.svg"></div>
-			        
 		        </div>
                 
             </div><!--//section-row-->
             
             <div class="section-row">
 		        <h3 class="section-title">Conclusions</h3>
-				<p> While React Native indeed delivers a single code stack, there were a few platform-specific issues that had to be
-					addressed. For example, the iPhone X viewport needed an additional reserved area for the "notch" on the device's
-					screen. Android also has an issue of the keybord pop-up covering up portions of a form that are receiving input 
-					(user loses visibility of what's being entered). I discovered a remedy in the library, "react-native-keyboard-aware-scroll-view", 
-					which auto-scrolls the screen for this scenario.<br><br>
-				
-					The DAWGr project is a fun experiment that explores the idea of a focused audience that is free to create and share
-					content while also demonstrating areas of commercial advertising and sponsorship.
+				<p>
+					The Olympia Top Ten project is a useful experiment that explores the idea of a localized travel application that offers helpful guide content while also demonstrating areas of commercial advertising and sponsorship. It utilizes a good amount of animation effects from MDB (Material Design Bootstrap) to keep a lively presentation on all views.
 				
 				</p>
 	        </div><!--//section-row-->
