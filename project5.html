@@ -151,22 +151,28 @@
 		        <ul class="mb-5 ms-md-5">
 				  <li class="mb-3"><strong>Main view:</strong> Landing page that presents site drawer navigation, branding and promotional area.</li>
                   <li class="mb-3"><strong>Guide view:</strong> When a user clicks the navigation to Attractions, Restaurants or Events, the Guide component is called to render the top ten items in each category.</li>
-				  <li class="mb-3"><strong>Detail view:</strong> When a user clicks on a "more" button (when presented) the screen will update to this "masonry" gallery view that's geared for small viewports. An additional click will open the image in a full-screen view.</li>
-				  <li class="mb-3"><strong>Resources view:</strong> Instead of a carousel of cards, the React Native application will offer the Resources as another navigation point within the drawer navigator.</li>
+				  <li class="mb-3"><strong>Detail view:</strong> When a user clicks on an item from a top 10 list, a larger image will be displayed with more detailed information about the item.</li>
+				  <li class="mb-3"><strong>Gallery view:</strong> When a user clicks on a "more" button (when presented) the screen will update to this "masonry" gallery view that's geared for small viewports.</li>
+				  <li class="mb-3"><strong>Resources view:</strong> Instead of a carousel of cards (like in the React app), the React Native application will offer the Resources as another navigation point within the drawer navigator.</li>
 				  <li class="mb-3"><strong>Contest entry:</strong> A modal that appears when "enter sweepstakes" is selected from the Main view.</li>
 				</ul>
 				
-                <p>The core design was that all of the page views should be unified by matching header and footer branding and
-                    navigation. This was the starting point for converting the design from wireframe into code. The wireframes provided
-                    basic layout of graphics, text and form details, but I spent some time choosing:</p>
+                <p>The mission of the React Navtive app was to streamline the navigation and presentation for mobile viewports in a way that the responsive React app can't. For example, the mobile application makes use of drawer navigation that responds to screen swipes and it gets out of the way after selections are made. I also wanted to preserve many of the features and behaviors that were in the React app, such as: animation and galleries. I chose libraries that enabled easier implmentation of these features:</p>
                 <p>
-                    <strong>Footer:</strong> The footer shows the expected simple navigation links for when the page is fully scrolled, but it also includes a Washington State graphic that provides a point of reference for the city of Olympia's location relative to Seattle.
+                    <strong>Animation:</strong> I used Animatable from the library "react-native-animatable" to perform several effects: a "tada" splash of the the site's logo and a "fade-in" animation of the site's tag line. 
                 </p>
 				<p>
-                    <strong>Guide:</strong> I utilized the mdbreact library (Material Design Boostrap) to use a zoom-in effect on each item in the top ten list while also alternating images & text down the page for visual interest. If addition images are included in the provided data objects, a button and route link will be generated for a "masonry" gallery view.
+                    <strong>Guide:</strong> I utilized react-native's "FlatList" component to render react-native-elements "Tile" components for each of the top 10 items.
+                </p>
+				<p>
+                    <strong>Details:</strong> When one of the top 10 items is clicked, I utilize a HighLightInfo component to render a detailed view. This component constructs a card and formats three types of links if the data is present: a link to a Google Maps view of the address, a link to the external website and a navigation link to an image gallery view of more images.
+                </p>
+				<p>
+                    <strong>Image Gallery:</strong> If addition images are present in the top 10 data object, a button will be presented that navigates to the ImageGallery component. Here, I use MasonryList from the "react-native-masonry-list" library to generate a "masonry" style gallery for smaller viewports.
+
                 </p>
                 <p>
-                    <strong>Carousels:</strong> To implement a carousel display the full pages, I utilized the Slider component from react-slick. Slider allowed me to construct my own CardCarousel component where I rotate cards with images for the resource links on the Main view. I reused the CardCarousel component for local sponsors/advertisers at the bottom of the three category views.
+                    <strong>Carousels:</strong> To implement a carousel display for sponsored advertisements, I utilized react-native-slick. The Slick component allowed me to rotate Cards for each sponsor object (local Olympia businesses).
                 </p>
 
 
@@ -181,7 +187,7 @@
 	            <ul class="list-unstyled ps-4 mb-5 ms-md-5">
 					<li class="mb-4"><i class="fas fa-check text-primary me-3"></i>React Native (and Expo) allowed for a single JS-driven code base for multiple native devices.</li>
 					<li class="mb-4"><i class="fas fa-check text-primary me-3"></i>Reusable React Native components were quickly derived from the completed React web application.</li>
-					<li class="mb-4"><i class="fas fa-check text-primary me-3"></i>Redux management of state provided a centralized interface to the backend.</li>
+					<li class="mb-4"><i class="fas fa-check text-primary me-3"></i>Redux management of state provided a centralized interface to the program data.</li>
 				</ul>
 				
 				
