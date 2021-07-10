@@ -17,9 +17,10 @@
     <script defer src="assets/fontawesome/js/all.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
        
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
 
+	<!-- build:css css/main.css -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
+	<!-- endbuild -->
 </head> 
 
 <body>
@@ -383,14 +384,13 @@
 	    </div>
     </article>  
 
-        
-    <!-- Javascript -->          
-
+                
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- build:js js/main.js -->
 	<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>   
-    
+	<script type="text/javascript" src="assets/js/main.js"></script>   
+    <!-- endbuild -->
 </body>
 </html> 
