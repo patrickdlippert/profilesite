@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
-    "copydata": "copyfiles -f *.ico dist && copyfiles -f assets/resume/* dist/assets/resume",
+    "copydata": "copyfiles -f *.ico dist && copyfiles -f assets/resume/* dist/assets/resume && copyfiles -f assets/css/theme-1.css dist/assets/css",
     "imagemin": "imagemin assets/images/* -o dist/assets/images && imagemin assets/images/clients/* -o dist/assets/images/clients && imagemin assets/images/logos/* -o dist/assets/images/logos && imagemin assets/images/projects/* -o dist/assets/images/projects  && imagemin assets/images/webdev-icons/* -o dist/assets/images/webdev-icons",
     "usemin": "usemin projects.html -d dist --htmlmin -o dist/projects.html && usemin project1.html -d dist --htmlmin -o dist/project1.html && usemin project2.html -d dist --htmlmin -o dist/project2.html && usemin project3.html -d dist --htmlmin -o dist/project3.html && usemin project5.html -d dist --htmlmin -o dist/project5.html && usemin project6.html -d dist --htmlmin -o dist/project6.html && usemin resume.html -d dist --htmlmin -o dist/resume.html && usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin index.html -d dist --htmlmin -o dist/index.html",
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run copydata && npm run usemin",
@@ -18,6 +18,7 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.5.2",
+    "bootstrap-social": "^5.1.1",
     "flickity": "^2.2.2",
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
